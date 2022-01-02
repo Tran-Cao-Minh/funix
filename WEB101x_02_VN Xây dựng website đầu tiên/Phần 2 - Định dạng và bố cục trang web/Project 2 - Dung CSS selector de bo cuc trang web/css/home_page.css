@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-gray: #efefef;
+  --bg-lightgray: #f7f7f7;
+  --white: #fff;
+  --black-text: #333;
+  --blue-link: #5fc5fc;
+
+  --sans-serif-font: 'Nunito', sans-serif;
+  --serif-font: 'Source Serif Pro', serif;
+  --serif-font: 'Crete Round', serif;
+}
+
+body {
+  background-color: var(--bg-gray);
+}
+
+header {
+  width: 100%;
+  height: 72px;
+  background-color: var(--white);
+}
+
+header nav {
+  max-width: 1400px;
+  height: inherit;
+  margin: auto;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header li {
+  display: inline-block;
+}
+
+header a {
+  display: inline-block;
+  height: 72px;
+  padding: 0 16px;
+
+  color: var(--black-text);
+
+  line-height: 72px;
+  font-size: 13.5px;
+  font-family: var(--sans-serif-font);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+} 
+
+header a:hover {
+  background-color: var(--bg-lightgray);
+}
+
+header .menu-left {
+  float: left;
+}
+
+header .menu-right {
+  float: right;
+}
+
+#banner {
+  position: relative;
+
+  width: 100%;
+  height: auto;
+}
+
+#banner img {
+  width: 100%;
+  height: auto;
+}
+
+#banner .content {
+  position: absolute;
+  top: 168px;
+  left: 72px;
+}
+
+#banner h1 {
+  color: var(--white);
+  
+  letter-spacing: 4px;
+  font-size: 56px;
+  font-family: var(--serif-font);
+  text-shadow: 0 0 8px var(--black-text);
+}
+
+#banner p {
+  color: var(--white);
+  
+  font-size: 24px;
+  font-family: var(--sans-serif-font);
+  text-shadow: 0 0 8px var(--black-text);
+}
+
+#neighborhood-guides {
+  max-width: 1360px;
+  height: auto;
+  margin: auto;
+}
+
+#neighborhood-guides .title {
+  width: 100%;
+  height: auto;
+  margin: 34px 0 20px;
+}
+
+#neighborhood-guides h2 {
+  color: var(--black-text);
+
+  
+  font-size: 28px;
+  font-family: var(--sans-serif-font);
+} 
+
+#neighborhood-guides p {
+  margin-top: 8px;
+
+  color: var(--black-text);
+
+  font-size: 18px;
+  font-family: var(--sans-serif-font);
+}
+
+#neighborhood-guides .guide-image-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  width: calc(100% + 34px);
+  height: auto;
+  margin: 0 0 0 -17px;
+  padding-bottom: 32px;
+}
+
+#neighborhood-guides .col {
+  width: calc(100% / 3);
+  padding: 0 22px;
+}
+
+#neighborhood-guides .col:last-child {
+  clear: both;
+}
+
+#neighborhood-guides .col img {
+  display: block;
+  width: 100%;
+}
+
+#neighborhood-guides .col img + img {
+  margin-top: 38px;
+}
