@@ -1,0 +1,193 @@
+@media only screen and (min-width: 992px) {
+
+  /* For Desktop */
+  .col-1 {
+    width: 8.33%;
+  }
+
+  .col-2 {
+    width: 16.66%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 33.33%;
+  }
+
+  .col-5 {
+    width: 41.66%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-7 {
+    width: 58.33%;
+  }
+
+  .col-8 {
+    width: 66.66%;
+  }
+
+  .col-9 {
+    width: 75%;
+  }
+
+  .col-10 {
+    width: 83.33%;
+  }
+
+  .col-11 {
+    width: 91.66%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+
+  #header {
+    background: var(--white);
+    padding: 0 72px;
+  }
+
+  #header ul {
+    list-style-type: none;
+  }
+
+  #header li {
+    display: inline-block;
+  }
+
+  #header a {
+    height: 94px;
+    padding: 0 16px;
+
+    color: var(--black-text);
+
+    line-height: 94px;
+    font-size: 16px;
+    font-family: var(--sans-serif-font);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  #header li.menu-right {
+    float: right;
+  }
+
+  #header li.menu-right a:last-child {
+    padding-right: 16px;
+  }
+
+  #banner {
+    position: relative;
+
+    width: 100%;
+    height: 38.7vw;
+
+    background-image: url('../images/lodging.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #banner .content {
+    position: absolute;
+    top: 6.2vw;
+    left: 4.6vw;
+  }
+
+  #banner h1 {
+    font-size: 4vw !important;
+    letter-spacing: 0.3vw;
+    color: var(--white) !important;
+    text-shadow: 0 0 8px var(--black-text);
+    font-family: var(--serif-font);
+  }
+
+  #banner p {
+    margin-top: -0.2vw !important;
+    font-size: 1.8vw !important;
+    color: var(--white) !important;
+    text-shadow: 0 0 8px var(--black-text);
+    font-family: var(--sans-serif-font);
+  }
+
+  #banner hr {
+    display: none;
+  }
+
+  #neighborhood-guides {
+    width: 100%;
+    padding: 0 34px 16px;
+    background: var(--bg-desktop-neighborhood-guides);
+  }
+
+  #neighborhood-guides .title {
+    padding: 46px 22px 58px;
+  }
+
+  #neighborhood-guides h2 {
+    color: var(--black-text);
+
+    font-size: 40px;
+    font-family: var(--sans-serif-font);
+    font-weight: bolder;
+  }
+
+  #neighborhood-guides p {
+    margin-top: 8px;
+
+    color: var(--black-text);
+
+    font-size: 19.1px;
+    font-family: var(--sans-serif-font);
+  }
+
+  #neighborhood-guides img {
+    width: calc(100% - 10px);
+    margin-left: 5px;
+    margin-bottom: 2.3vw;
+  }
+
+  #footer {
+    width: 100%;
+    padding: 26px 34px 0;
+    background: var(--bg-desktop-footer);
+
+    border-top: 1.6px solid var(--gray);
+  }
+
+  #footer h3 {
+    margin-top: 13px;
+    color: var(--black-text);
+
+    font-size: 32px;
+    font-family: var(--sans-serif-font);
+    font-weight: bolder;
+  }
+
+  #footer p {
+    margin-top: 10px;
+
+    color: var(--black-text);
+
+    font-size: 19.1px;
+    font-family: var(--sans-serif-font);
+  }
+
+  #footer a {
+    display: inline-block;
+
+    padding: 11px 0;
+    color: var(--blue-link);
+
+    font-size: 19.1px;
+    font-family: var(--sans-serif-font);
+  }
+}

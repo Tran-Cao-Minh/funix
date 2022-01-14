@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-mobile-menu: #556270;
+  --bg-desktop-neighborhood-guides: #e4e4e4;
+  --bg-desktop-footer: #f0f0f0;
+
+
+  --white: #fff;
+  --black-text: #333;
+  --gray: #ccc;
+  --blue-link: #137db6;
+
+  --sans-serif-font: 'Nunito', sans-serif;
+  --serif-font: 'Crete Round', serif;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
