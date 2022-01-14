@@ -1,0 +1,136 @@
+:root {
+  --white: #fff;
+  --black-text: #333;
+  --bg-tablet-menu: #556270;
+  --bg-lg-neighborhood-guides: #e4e4e4;
+  --bg-lg-footer: #f0f0f0;
+  --text-green: #34BE82;
+  --text-gray: #666;
+
+  --serif-font: 'Crete Round', serif;
+}
+
+.text-gray {
+  color: var(--text-gray);
+}
+
+.text-hover-green:hover {
+  color: var(--text-green) !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .text-sm-dark {
+    color: var(--black-text) !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .f-lg-serif {
+    font-family: var(--serif-font);
+  }
+}
+
+
+.fs-1, .fs-2 {
+  font-size: 50px !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .fs-1, .fs-2 {
+    font-size: calc(1.375rem + 1.5vw) !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .fs-1 {
+    font-size: 2.5rem !important;
+  }
+
+  .fs-2 {
+    font-size: 2rem !important;
+  }
+}
+
+/* header menu */
+.bg-menu {
+  background-color: var(--bg-tablet-menu);
+}
+
+.text-menu {
+  color: var(--white);
+}
+
+@media only screen and (min-width: 992px) {
+  .bg-menu {
+    background-color: var(--white);
+  }
+
+  .text-menu {
+    color: var(--black-text);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .text-menu {
+    font-size: 13.5px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .text-menu {
+    font-size: 12px !important;
+  }
+}
+
+/* end header menu */
+
+/* banner */
+@media only screen and (min-width: 992px) {
+  .banner-content {
+    position: absolute;
+    top: 11vw;
+    left: 4.6vw;
+  }
+
+  .banner-content h1 {
+    font-size: 4vw !important;
+    letter-spacing: 0.3vw;
+    color: var(--white) !important;
+    text-shadow: 0 0 8px var(--black-text);
+  }
+
+  .banner-content p {
+    margin-top: -0.5vw !important;
+    font-size: 1.8vw !important;
+    color: var(--white) !important;
+    text-shadow: 0 0 8px var(--black-text);
+  }
+}
+
+/* end banner */
+
+/* neighborhood-guides */
+body {
+  background-color: var(--white);
+}
+
+@media only screen and (min-width: 992px) {
+  body {
+    background-color: var(--bg-lg-neighborhood-guides);
+  }
+}
+
+/* neighborhood-guides */
+
+/* footer */
+.bg-footer {
+  background-color: var(--white);
+}
+
+@media only screen and (min-width: 992px) {
+  .bg-footer {
+    background-color: var(--bg-lg-footer);
+  }
+}
+
+/* end footer */
