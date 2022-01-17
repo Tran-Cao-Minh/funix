@@ -3,6 +3,12 @@
 :root {
   --bs-font-sans-serif: 'Be Vietnam Pro', sans-serif;
 }
+
+.text-shadow {
+  text-shadow: 0 0 0.5rem rgb(33,37,41),
+               0 0 0.5rem rgb(220,53,69),
+               0 0 1rem rgb(220,53,69);
+}
 /* .font-logo {
   font-family: 'Fredoka One', cursive;
 }
