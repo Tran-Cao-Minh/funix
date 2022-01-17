@@ -1,6 +1,7 @@
 :root {
   --bs-primary-rgb: 41, 44, 109;
   --bs-secondary-rgb: 187, 187, 187; 
+  --bs-light-rgb: 245, 245, 250;
 }
 
 .btn-primary {

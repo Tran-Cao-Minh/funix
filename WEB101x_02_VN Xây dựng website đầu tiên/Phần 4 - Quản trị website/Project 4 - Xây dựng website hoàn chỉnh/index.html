@@ -31,17 +31,19 @@
   <!-- font awsome -->
   <script src="https://kit.fontawesome.com/aeb1173b82.js" crossorigin="anonymous"></script>
   <!-- CSS -->
-  <link rel="stylesheet" href="./css/base.css">
-  <link rel="stylesheet" href="./css/index-body.css">
-  <link rel="stylesheet" href="./css/change-bootstrap-color.css">
+  <link rel="stylesheet" href="./css/color.css">
   <link rel="stylesheet" href="./css/font.css">
+  <link rel="stylesheet" href="./css/hover.css">
+  <link rel="stylesheet" href="./css/index-body.css">
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-0">
-      <div class="container">
-        <a class="navbar-brand px-4 bg-danger rounded-1 ms-4" href="#"><i class="fas fa-star text-warning"></i></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-0">
+      <div class="container-xxl">
+        <a class="navbar-brand px-4 bg-danger rounded-1 ms-4" href="index.html">
+          <i class="fas fa-star text-warning"></i>
+        </a>
         <button class="navbar-toggler me-4 my-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -49,25 +51,72 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active p-4" aria-current="page" href="#">Việt Nam</a>
+              <a class="nav-link p-4 link-hover active" aria-current="page" href="index.html">Việt Nam</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-4" href="#">Miền Nam</a>
+              <a class="nav-link p-4 link-hover" href="southern.html">Miền Nam</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-4" href="#">Miền Bắc</a>
+              <a class="nav-link p-4 link-hover" href="northern.html">Miền Bắc</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-4" href="#">Miền Tây</a>
+              <a class="nav-link p-4 link-hover" href="western.html">Miền Tây</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-4" href="#">Miền Trung</a>
+              <a class="nav-link p-4 link-hover" href="centralern.html">Miền Trung</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
+
+  <main class="bg-light">
+    <h1 class="text-center p-5"> 
+      Việt Nam
+    </h1>
+  </main>
+
+  <footer class="bg-white">
+    <div class="container-xxl pt-3 pb-4 d-flex justify-content-center flex-wrap">
+      <div class="col-12 col-md-6 col-lg-4 text-center mb-2">
+        <h6 class="mb-3 mt-4 text-black">Hỗ trợ</h6>
+        <a class="d-block py-2 text-decoration-none text-dark link-hover" href="#">
+          Nguồn thông tin
+        </a>
+        <a class="d-block py-2 text-decoration-none text-dark link-hover" href="#">
+          Chính sách bảo mật
+        </a>
+        <a class="d-block py-2 text-decoration-none text-dark link-hover" href="#">
+          Quy chế hoạt động
+        </a>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 text-center mb-2">
+        <h6 class="mb-3 mt-4 text-black">Kết nối</h6>
+        <a class="d-block py-2 text-decoration-none text-dark link-hover" href="#">
+          Facebook
+        </a>
+        <a class="d-block py-2 text-decoration-none text-dark link-hover" href="#">
+          Youtube
+        </a>
+        <a class="d-block py-2 text-decoration-none text-dark link-hover" href="#">
+          Twitter
+        </a>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 text-center mb-2">
+        <h6 class="mb-3 mt-4 text-black">Liên hệ</h6>
+        <span class="d-block py-2 text-decoration-none text-dark" href="#">
+          17 Duy Tân, Cầu Giấy, Hà Nội
+        </span>
+        <span class="d-block py-2 text-decoration-none text-dark" href="#">
+          083.888.0123
+        </span>
+        <span class="d-block py-2 text-decoration-none text-dark" href="#">
+          support@travel.vn
+        </span>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
