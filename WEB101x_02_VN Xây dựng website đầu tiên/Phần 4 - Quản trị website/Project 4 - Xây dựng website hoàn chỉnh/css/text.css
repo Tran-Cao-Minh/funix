@@ -5,13 +5,13 @@
 }
 
 .text-shadow {
-  text-shadow: 0 0 0.5rem rgb(33,37,41),
-               0 0 0.5rem rgb(220,53,69),
-               0 0 1rem rgb(220,53,69);
+  text-shadow: 0 0 0.5rem rgb(33, 37, 41),
+    0 0 0.5rem rgb(220, 53, 69),
+    0 0 1rem rgb(220, 53, 69);
 }
 
 p {
-  margin-bottom: 0.5rem!important;
+  margin-bottom: 0.5rem !important;
   line-height: 1.8;
 }
 
@@ -23,11 +23,11 @@ p {
 .text-justify {
   text-align: justify;
 }
-/* .font-logo {
-  font-family: 'Fredoka One', cursive;
-}
 
-.font-title {
-  font-family: 'Dosis', sans-serif;
-  font-weight: 700;
-} */
+.text-preview {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
