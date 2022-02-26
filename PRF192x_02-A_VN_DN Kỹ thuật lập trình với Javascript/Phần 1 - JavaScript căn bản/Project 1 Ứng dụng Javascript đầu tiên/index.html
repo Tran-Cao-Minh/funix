@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRF192x_02-A_VN_DN - Project 1: Ứng dụng Javascript đầu tiên</title>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body class="p-5 text-center">
+
+  <p class="text-primary fs-4">Click the button to display an alert box.</p>
+
+  <button class="btn btn-primary text-uppercase" onclick="notify()">
+    Try it
+  </button>
+
+  <p id="name" class="fw-bold"></p>
+  <p id="city" class="fw-bold"></p>
+  <p id="mobile" class="fw-bold"></p>
+  <p id="email" class="fw-bold"></p>
+  <p id="jobs" class="fw-bold"></p>
+  <p id="age" class="fw-bold"></p>
+
+  <div style="display: none;" id="next-step">
+    <button class="btn btn-success text-uppercase">Next step</button>
+  </div>
+
+  <script>
+    /**
+     * @description Get user information and show it
+     */
+    function notify() {
+      alert('Welcome to first JavaScript app');
+
+      const name = prompt('Enter your name');
+      document.getElementById('name').innerHTML =
+        name ? `Your name is ${name}` : 'You not enter your name';
+
+      const city = prompt('Enter your city');
+      document.getElementById('city').innerHTML =
+        city ? `Your city is ${city}` : 'You not enter your city';
+
+      const mobile = prompt('Enter your mobile');
+      document.getElementById('mobile').innerHTML =
+        mobile ? `Your mobile is ${mobile}` : 'You not enter your mobile';
+
+      const email = prompt('Enter your email');
+      document.getElementById('email').innerHTML =
+        email ? `Your email is ${email}` : 'You not enter your email';
+
+      const jobs = prompt('Enter your jobs');
+      document.getElementById('jobs').innerHTML =
+        jobs ? `Your jobs is ${jobs}` : 'You not enter your jobs';
+
+      /**
+       * @description Caculate the age of user
+       * @param {number} birthYear - Birth year of user
+       * @returns {number} - The age of user
+       */
+      function getAge(birthYear) {
+        const CURRENT_YEAR = new Date().getFullYear();
+        return CURRENT_YEAR - birthYear;
+      }
+
+      let birthYear = prompt('Enter your birth year');
+      const CURRENT_YEAR = new Date().getFullYear();
+      while (
+        birthYear > CURRENT_YEAR
+      ) {
+        birthYear = prompt('Re enter your birth year');
+      };
+      document.getElementById('age').innerHTML = 
+        `Your age is ${getAge(birthYear)}`;
+
+      document.getElementById('next-step').style.display = 'block';
+    }
+  </script>
+
+</body>
+
+</html>
